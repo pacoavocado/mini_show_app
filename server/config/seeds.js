@@ -5,8 +5,8 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Space Hulk' },
-    { name: 'Blackstone Fortress' },
+    { name: 'Blood Angels' },
+    { name: 'Genestealers' },
     { name: 'Kill Team: RT' },
     { name: 'Blood Bowl' },
     { name: 'Cursed City' }
@@ -20,7 +20,7 @@ db.once('open', async () => {
     {
       name: 'Librarian Calistarius',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'Lexicarnum Calistarius has Phychic Powers as well as his Force Axe.',
       image: '1.jpg',
       category: categories[0]._id,
       price: 2.99,
@@ -29,7 +29,7 @@ db.once('open', async () => {
     {
       name: 'Brother Claudio',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'A close combat expert Blaudio wields dual lightning claws.',
       image: '2.jpg',
       category: categories[0]._id,
       price: 1.99,
@@ -39,7 +39,7 @@ db.once('open', async () => {
       name: 'Seargent Lorenzo',
       category: categories[0]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'Leader of Lorenzo Squad, he commands his marines with his stormbolter and power sword',
       image: '3.jpg',
       price: 7.99,
       quantity: 20
@@ -48,7 +48,7 @@ db.once('open', async () => {
       name: 'Brother Omino',
       category: categories[0]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+        'A loyal brother armed with stormbolter and powerfist',
       image: '4.jpg',
       price: 3.99,
       quantity: 50
@@ -57,7 +57,7 @@ db.once('open', async () => {
       name: 'Brother Scipio',
       category: categories[0]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
+        'A loyal brother armed with stormbolter and powerfist',
       image: '5.jpg',
       price: 14.99,
       quantity: 100
@@ -66,7 +66,7 @@ db.once('open', async () => {
       name: 'Brother Noctis',
       category: categories[0]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        'A loyal brother armed with stormbolter and powerfist',
       image: '6.jpg',
       price: 399.99,
       quantity: 30
@@ -75,7 +75,7 @@ db.once('open', async () => {
       name: 'Brother Denio',
       category: categories[0]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
+        'A loyal brother armed with stormbolter and powerfist',
       image: '7.jpg',
       price: 199.99,
       quantity: 30
@@ -84,7 +84,7 @@ db.once('open', async () => {
       name: 'Brother Leon',
       category: categories[0]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
+        'A loyal brother armed with Assault Cannon and power fist',
       image: '8.jpg',
       price: 9.99,
       quantity: 100
@@ -92,7 +92,7 @@ db.once('open', async () => {
     {
       name: 'Brother Goriel',
       category: categories[0]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
+      description: 'A loyal brother armed with stormbolter and powerfist',
       image: '9.jpg',
       price: 1.99,
       quantity: 1000
@@ -101,7 +101,7 @@ db.once('open', async () => {
       name: 'Brother Valencio',
       category: categories[0]._id,
       description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
+        'A loyal brother armed with stormbolter and chainfist',
       image: '10.jpg',
       price: 2.99,
       quantity: 1000
@@ -110,7 +110,7 @@ db.once('open', async () => {
       name: 'Brother Zael',
       category: categories[0]._id,
       description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
+        'Armed with the Heavy Flamer he is ready to clense the heritic with fire',
       image: '11.jpg',
       price: 7.99,
       quantity: 100
@@ -119,11 +119,146 @@ db.once('open', async () => {
       name: 'Sergeant Gideon',
       category: categories[0]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+        'Leader of Gideon Squad, he drives back the heritic with Power Hammer and Shield.',
       image: '12.jpg',
       price: 9.99,
       quantity: 600
-    }
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '13.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '16.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '17.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '20.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '21.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '23.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '26.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '27.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '29.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '32.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '34.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '34a.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '35.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '35a.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Genestealer',
+      category: categories[1]._id,
+      description:
+        'Multi Armed abominations from your darkest nightmares.',
+      image: '35b.jpg',
+      price: 9.99,
+      quantity: 600
+    },    
   ]);
 
   console.log('miniatures seeded');
